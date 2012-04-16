@@ -20,7 +20,7 @@ begin
     s.authors = ["Daniel DeLeo"]
     s.files =  FileList["[A-Za-z]*", "{lib,spec}/**/*"]
     s.rubyforge_project = "moqueue"
-    s.add_dependency("amqp", "~> 0.8.0.rc14")
+    s.add_dependency("amqp", ">= 0.8.0.rc14")
   end
 rescue LoadError
   puts "Jeweler, or one of its dependencies, is not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
