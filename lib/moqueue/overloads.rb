@@ -63,11 +63,11 @@ module AMQP
     end
 
     def prefetch(size)
-      # noop
+      self
     end
 
     def on_error(&block)
-      # noop
+      self
     end
   end
 end
