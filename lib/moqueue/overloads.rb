@@ -8,7 +8,10 @@ module AMQP
   end
 
   def self.start(opts={},&block)
-    EM.run(&block)
+    # EM.run(&block)
+    EM.run do
+      yield connection if block_given?
+    end
   end
 
   def self.stop
