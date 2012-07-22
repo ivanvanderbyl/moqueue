@@ -8,5 +8,9 @@ module Moqueue
     def on_tcp_connection_loss(&block)
       # noop
     end
+
+    def on_error(&block)
+      #noop
+    end
   end
 end
